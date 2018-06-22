@@ -1,0 +1,33 @@
+{
+  "name": "lovemap",
+  "version": "1.0.0",
+  "description": "A Travel Recoder & Memory Keeper For Those Lovebirds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbsxjy/LoveMap.git"
+  },
+  "author": "Jingyu Xie",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
+    "devextreme": "18.1.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.2",
+    "webpack-cli": "^3.0.8"
+  }
+}
