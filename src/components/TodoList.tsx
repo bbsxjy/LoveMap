@@ -1,15 +1,20 @@
 import * as React from "react";
 import {Todo} from "./Todo";
 
-interface TodoListProps {
-  todos: string[],
-  toggleTodo: (...args: any[]) => any
+export interface Todo {
+    id: string,
+    text: string
 }
 
-export const TodoList: React.SFC<TodoListProps> = ({ todos, toggleTodo }) => (
-  <ul>
-    {todos.map(todo => (
-      <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
-    ))}
-  </ul>
+interface TodoListProps {
+    todos: Todo[],
+    toggleTodo: (...args: any[]) => any
+}
+
+export const TodoList: React.SFC<TodoListProps> = ({todos, toggleTodo}) => (
+    <ul>
+        {todos.map(todo => (
+            <Todo onClick={() => toggleTodo(todo.id)} completed={false} text={todo.id}/>
+        ))}
+    </ul>
 );
