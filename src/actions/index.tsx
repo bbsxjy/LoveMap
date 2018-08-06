@@ -15,7 +15,7 @@ export interface SetVisibilityFilter {
 
 export interface ToggleToDo {
     type: constants.TOGGLE_TODO
-    id: any
+    id: string
 }
 
 export const VisibilityFilters = {

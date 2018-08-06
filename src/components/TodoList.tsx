@@ -11,10 +11,12 @@ interface TodoListProps {
     toggleTodo: (...args: any[]) => any
 }
 
-export const TodoList: React.SFC<TodoListProps> = ({todos, toggleTodo}) => (
-    <ul>
-        {todos.map(todo => (
-            <Todo onClick={() => toggleTodo(todo.id)} completed={false} text={todo.id}/>
-        ))}
-    </ul>
-);
+export function TodoList({todos, toggleTodo}: any) {
+    return (
+        <ul>
+            {todos.map((todo: Todo) => (
+                <Todo onClick={() => toggleTodo(todo.id)} completed={false} text={todo.id}/>
+            ))}
+        </ul>
+    );
+}
