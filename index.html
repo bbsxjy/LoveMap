@@ -1,21 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redux Todos Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LoveMap - Travel Recorder & Memory Keeper</title>
+    <meta name="description" content="A Travel Recorder & Memory Keeper For Those Lovebirds">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-<div id="root"></div>
-<!--
-  This HTML file is a template.
-  If you open it directly in the browser, you will see an empty page.
+<body class="home page-template-default page page-id-11">
 
-  You can add webfonts, meta tags, or analytics to this file.
-  The build step will place the bundled scripts into the <body> tag.
+<!-- Loading spinner -->
+<div class="loaderWrap" style="display: none;">
+    <div id="loader">
+        <div class="loader-heart loader-heart2"><i class="fa fa-heart fa-x pulse2"></i></div>
+        <div class="loader-heart loader-heart3"><i class="fa fa-heart fa-2x pulse2"></i></div>
+        <div class="loader-heart loader-heart4"><i class="fa fa-heart fa-3x pulse2"></i></div>
+        <div class="loader-heart loader-heart1"><i class="fa fa-heart fa-4x pulse2"></i></div>
+        <div class="loader-heart loader-heart5"><i class="fa fa-heart fa-3x pulse2"></i></div>
+        <div class="loader-heart loader-heart6"><i class="fa fa-heart fa-2x pulse2"></i></div>
+        <div class="loader-heart loader-heart7"><i class="fa fa-heart fa-1x pulse2"></i></div>
+    </div>
+</div>
 
-  To begin the development, run `npm start` in this folder.
-  To create a production bundle, use `npm run build`.
--->
+<!-- Page content -->
+<div id="page" class="site">
+    <!-- React component will mount here -->
+
+    <!-- Scroll-to-top -->
+    <a class="scroll-to-top" style="display: none;">
+        <i class="fa fa-heart fa-2x pulse"></i>
+    </a>
+</div>
+
+<!-- React App Entry Point -->
+<script type="module" src="/src/index.tsx"></script>
+
 </body>
 </html>

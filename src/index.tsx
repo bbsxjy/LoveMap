@@ -1,15 +1,14 @@
-import * as React from "react";
-import {render} from "react-dom";
-import {createStore} from "redux";
-import {Provider} from "react-redux";
-import {App} from "./components/App";
-import rootReducer from "./reducers";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./app";
+import "./styles/global.css";
 
-const store = createStore(rootReducer);
+const container = document.getElementById("page");
+if (!container) throw new Error("Failed to find the root element");
 
-render(
-    <Provider store={store}>
-        <App/>
-    </Provider>,
-    document.getElementById("root") as HTMLElement
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
